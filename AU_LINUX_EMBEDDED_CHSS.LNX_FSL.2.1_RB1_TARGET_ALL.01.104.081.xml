@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo-imm" fetch="https://git.codelinaro.org/clo/imm" review="null"/>
+  <remote name="clo-ype" fetch="https://git.codelinaro.org/clo/ype" review="null"/>
+  <remote name="github-imx" fetch="https://github.com/nxp-imx" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="external/github.com/meta-qt5/meta-qt5" path="sources/meta-qt5" remote="clo-ype" revision="ff073f04109900fc07bf81e2f1df63c626caf342"/>
+  <project name="external/openembedded.org/meta-openembedded" path="sources/meta-openembedded" remote="clo-ype" revision="fe5c83312de11e80b85680ef237f8acb04b4b26e"/>
+  <project name="external/yoctoproject.org/poky" path="sources/poky" remote="clo-ype" revision="78890ea22750804e3e9113e76f7ca3d7234c8342"/>
+  <project name="imm/meta-browser" path="sources/meta-browser" remote="clo-imm" revision="10f6e3778d823ee1be106c126216c6f941088fbf"/>
+  <project name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" remote="github-imx" revision="b8f0fc6f578db1259e40806131b2140db0bb0c34"/>
+  <project name="clo/le/meta-qti-connectivity" path="sources/meta-qti-connectivity" revision="8b47a4078769a5f4be8cffcdfdc5101a578b9792" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="sources/wlan-opensource/wpa_supplicant_8" revision="35041151b0bd1aea1a0e020280630e02824a31b0" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="sources/wlan-opensource/fw-api" revision="8a0f96d424523d7453cb7aed24936b9a40993c32" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="sources/wlan-opensource/qca-wifi-host-cmn" revision="1be582a28ca4506725e708db32a5860bb0b24bf7" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="sources/wlan-opensource/qcacld-2.0" revision="d702d0c1efd3a074562c477885d87a64e4bb893b" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="sources/wlan-opensource/qcacld-3.0" revision="fd856963ed23d45ee75242cc2b02b49cb6e90a09" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/tools" path="sources/wlan-opensource/dsrc-tool" revision="8fa2b9c594a21219e726898f6f635159f2e2361f" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="sources/wlan-opensource/sigma-dut" revision="4ceb12ac32d72abbeb3f81b3f1d1adfb52429cac" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="sources/wlan-opensource/mdm-init" revision="b8942cb775d459edd871dad52b5f6a44cd31d71b" upstream="CHSS.LNX_FSL.2.1_rb1.11"/>
+</manifest>
