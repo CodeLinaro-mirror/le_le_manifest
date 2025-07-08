@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo-ype" fetch="https://git.codelinaro.org/clo/ype" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  <default remote="clo" revision="refs/heads/LE.AU_EAP.1.0.c1"/>
+  <project name="clo/le/eap-qti-kernel" path="sources/eap-qti-kernel" revision="ff3c7193105df729173aa2c3e2168af5bdeb7ec0" upstream="refs/heads/mdm-eap.lnx.2.0.c50" dest-branch="refs/heads/mdm-eap.lnx.2.0.c50"/>
+  <project name="external/openembedded.org/meta-openembedded" path="sources/meta-openembedded" remote="clo-ype" revision="8760facba1bceb299b3613b8955621ddaa3d4c3f" upstream="refs/heads/openembeded.org/sumo"/>
+  <project name="external/yoctoproject.org/poky" path="sources/poky" remote="clo-ype" revision="58e82c451071d0e257da6088cf643e636282084c" upstream="refs/heads/yocto/sumo"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="cbe69b170fbdb201ae9bc80889678709e64caa78" upstream="refs/heads/sumo"/>
+  <project name="clo/le/meta-qti-eap" path="sources/meta-qti-eap" revision="a1bfdccbcfc4f7912b8a294324931aee52923e37" upstream="refs/heads/mdm-eap.lnx.2.0.c50" dest-branch="refs/heads/mdm-eap.lnx.2.0.c50"/>
+  <project name="clo/la/platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="afe4c7edfec1622c2d25f534e59d104a3695b662" upstream="refs/heads/location.lnx.4.0.c89" dest-branch="refs/heads/location.lnx.4.0.c89"/>
+  <project name="clo/la/platform/hardware/ril" path="telux/services/ril" revision="8a7d7551be3db47a604ad7dc062d5458d2cba2df" upstream="refs/heads/telsdk.lnx.2.0.c73" dest-branch="refs/heads/telsdk.lnx.2.0.c73"/>
+  <project name="clo/le/platform/open-source/telematics-apps" path="telematics/apps/open-source" revision="08f968349d80509d4787eb8673bd7cad5ddb3e88" upstream="refs/heads/telsdk.lnx.2.0.c73" dest-branch="refs/heads/telsdk.lnx.2.0.c73"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="b56ad75e40fe4ada748494a95e9e5f99d3eeb052" upstream="refs/heads/data.lnx.1.11.c47" dest-branch="refs/heads/data.lnx.1.11.c47"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="f91c8b97857f310584d08f79abe400619ac48eea" upstream="refs/heads/location.lnx.4.0.c89" dest-branch="refs/heads/location.lnx.4.0.c89"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/snaptel-sdk" path="telux/public" revision="0a9f540b9cb8dd552e13c867c67bff7a25bcc6ff" upstream="refs/heads/telsdk.lnx.2.0.c73" dest-branch="refs/heads/telsdk.lnx.2.0.c73"/>
+</manifest>
