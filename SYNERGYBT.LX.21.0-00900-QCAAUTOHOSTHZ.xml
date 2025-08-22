@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="clo/le/meta-qti-bt" path="poky/meta-qti-bt" revision="436ae3cddbe7481435d659a856810aad3ad7b57f" upstream="refs/heads/auto-bt-synergy.lnx.3.3" dest-branch="refs/heads/auto-bt-synergy.lnx.3.3"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/synergy" path="synergy/synergy-opensource" revision="eda0fd898ca0f80351b0e7836d75c7c1150d449d" upstream="refs/heads/auto-bt-synergy.lnx.3.3" dest-branch="refs/heads/auto-bt-synergy.lnx.3.3"/>
+</manifest>
