@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="clo/le/meta-qti-wlan" path="poky/meta-qti-wlan" revision="43edeaf5a61ae84277844fbe2e6fa61ffa95aedc" upstream="refs/heads/auto-wlan-service.lnx.1.4" dest-branch="refs/heads/auto-wlan-service.lnx.1.4"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="0acd1e0ce6b6a7d17083be2ea2dab01d9c3caa0c" upstream="refs/heads/auto-wlan-service.lnx.1.4" dest-branch="refs/heads/auto-wlan-service.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="37078689df3319e06e357ff67460f45a7af6d627" upstream="refs/heads/auto-wlan-api.lnx.1.4" dest-branch="refs/heads/auto-wlan-api.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/platform" path="src/wlan/platform" revision="ca86c2f0f86d6187ecd31ad2313f7186feba9ae7" upstream="refs/heads/auto-wlan-platform.lnx.2.4" dest-branch="refs/heads/auto-wlan-platform.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="f889e4d2173367ac2e7338e96f3dcc3988044f2b" upstream="refs/heads/auto-wlan-cmn-driver.lnx.2.4" dest-branch="refs/heads/auto-wlan-cmn-driver.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="ce3a349eaf3c0b0a9760c4149338274bbe878d4b" upstream="refs/heads/auto-wlan-cld3-driver.lnx.2.4" dest-branch="refs/heads/auto-wlan-cld3-driver.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/tools" path="disregard/vendor/opensource/wlan/tools" revision="8fa2b9c594a21219e726898f6f635159f2e2361f" upstream="refs/heads/auto-wlan-tools.lnx.1.4" dest-branch="refs/heads/auto-wlan-tools.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="630570a4f156fe581f670c42d77a171b10495b4b" upstream="refs/heads/auto-wlan-service.lnx.1.4" dest-branch="refs/heads/auto-wlan-service.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/wlan-devicetree" path="src/wlan/wlan-devicetree" revision="6b3e5b1b4499feb820489ef37d0f9fa83f83685c" upstream="refs/heads/auto-wlan-platform.lnx.2.4" dest-branch="refs/heads/auto-wlan-platform.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="6320c109897ebafec9c71419a1df333af11a9c85" upstream="refs/heads/auto-wlan-service.lnx.1.4" dest-branch="refs/heads/auto-wlan-service.lnx.1.4"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="src/mdm-init" revision="f83c8b6bf09b4e5303fb4b3613dbc40fbae26192" upstream="refs/heads/auto-wlan-tools.lnx.1.4" dest-branch="refs/heads/auto-wlan-tools.lnx.1.4"/>
+</manifest>
