@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo-le" fetch="https://git.codelinaro.org/clo/le" review="null"/>
+  <remote name="clo-ype" fetch="https://git.codelinaro.org/clo/ype" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="AGL/meta-agl" path="meta-agl" remote="clo-le" revision="301c9b323616ff0a0e41d0fd1178c1f2029e44e9" upstream="refs/heads/automotivelinux/chinook"/>
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" remote="clo-le" revision="c3a3974d075836fc700e57b2020f4b5473c89021" upstream="refs/heads/automotivelinux/chinook"/>
+  <project name="AGL/meta-agl-extra" path="meta-agl-extra" remote="clo-le" revision="812bc8ab9490e2418dedcf3a868a0ef9393ab01f" upstream="refs/heads/meta-agl-extra/chinook"/>
+  <project name="AGL/meta-amb" path="meta-amb" remote="clo-le" revision="ef3495bb8d6543709f6d1f7b657cb894d32c1757" upstream="refs/heads/meta-amb/master"/>
+  <project name="AGL/meta-intel-iot-security" path="meta-intel-iot-security" remote="clo-le" revision="20bbb97f6d5400b126ae96ef446c3e60c7e16285" upstream="refs/heads/meta-intel-iot-security/master"/>
+  <project name="AGL/meta-security-isafw" path="meta-security-isafw" remote="clo-le" revision="f44f15bb54057dd60399bb5dc7e0ecc7822168a2" upstream="refs/heads/caf_migration/meta-security-isafw/master"/>
+  <project name="clo/le/AGL/staging/agl-audio-plugin" path="audio/agl-audio-plugin" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/device/qcom/common" path="android_compat/device/qcom/common" revision="ee0950333d8115acc1b0ddbe948e882ed297d9a3" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="external/github.com/meta-qt5/meta-qt5" path="meta-qt5" remote="clo-ype" revision="4020adfd5198cf581eb20fbfd7d5b4c1a42fcdf4" upstream="refs/heads/github.com/morty"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gst-omx" path="gstreamer/gst-omx" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gst-plugins-bad" path="gstreamer/gst-plugins-bad" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gst-plugins-base" path="gstreamer/gst-plugins-base" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gst-plugins-good" path="gstreamer/gst-plugins-good" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gst-plugins-ugly" path="gstreamer/gst-plugins-ugly" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/ype/external/gstreamer.org/gstreamer/gstreamer" path="gstreamer/gstreamer" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="external/openembedded.org/meta-openembedded" path="meta-openembedded" remote="clo-ype" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" upstream="refs/heads/openembeded.org/krogoth"/>
+  <project name="external/yoctoproject.org/meta-ivi" path="meta-ivi" remote="clo-ype" revision="88357c7a3855b3e32e2173a51f6afe2a6881be5a" upstream="refs/heads/yocto/master"/>
+  <project name="external/yoctoproject.org/poky" path="poky" remote="clo-ype" revision="ae9b341ecfcc60e970f29cfe04306411ad26c0cf" upstream="refs/heads/yocto/krogoth"/>
+  <project name="clo/filesystems/fs/external/mtd-utils" path="filesystems/mtd-utils" revision="d17c0c1a6bbdf4a387dc95a349c97940d296203d" upstream="refs/heads/core-technologies.lnx.1.0.c30" dest-branch="refs/heads/core-technologies.lnx.1.0.c30"/>
+  <project name="clo/le/gstreamer/gst-mprtp" revision="refs/heads/LV.HB.1.1.4" path="gstreamer/gst-mprtp"/>
+  <project name="clo/la/kernel/msm-4.4" revision="b6f3b9387c56c345e3587f01861cca9ee1e9f1dc" upstream="refs/heads/auto-kernel.lnx.4.4.c2" dest-branch="refs/heads/auto-kernel.lnx.4.4.c2" path="kernel/msm-4.4"/>
+  <project name="clo/le/mdm/reboot-daemon" path="mdm-ss-mgr/reboot-daemon" revision="169412bc77d33c4d800d9de82cddc388824cf630" upstream="refs/heads/mdm-ss-mgr.lnx.1.0.c9" dest-branch="refs/heads/mdm-ss-mgr.lnx.1.0.c9"/>
+  <project name="meta-genivi-demo" remote="clo-le" revision="595a1e894975f5f62d6701536c031592bebca17a" upstream="refs/heads/meta-genivi-demo/master"/>
+  <project name="clo/le/meta-qti-bsp" path="poky/meta-qti-bsp" revision="b55d332f79f2be99fe21d8bb54cce87bff1e3991" upstream="refs/heads/aglmeta.lnx.1.0.c3" dest-branch="refs/heads/aglmeta.lnx.1.0.c3"/>
+  <project name="clo/le/meta-qti-core" path="disregard/poky/meta-qti-core" revision="99762ac1d273dbf6a5946cccb9dc9a7d0c5918ce" upstream="refs/heads/core-technologies.lnx.1.0.c30" dest-branch="refs/heads/core-technologies.lnx.1.0.c30"/>
+  <project name="clo/le/meta-qti-data" path="disregard/poky/meta-qti-data" revision="c8e4f826517c75a27f7a621203dedee4f2d4a66f" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13"/>
+  <project name="clo/le/meta-qti-location" path="disregard/poky/meta-qti-location" revision="b74c2df3c0b52beb9c3a6d772794f4a2d829d2cb" upstream="refs/heads/location.lnx.2.9.c6" dest-branch="refs/heads/location.lnx.2.9.c6"/>
+  <project name="clo/le/meta-qti-ss-mgr" path="disregard/poky/meta-qti-ss-mgr" revision="6ab66b46d744b39a145d4d70448f204ecec2e339" upstream="refs/heads/mdm-ss-mgr.lnx.1.0.c9" dest-branch="refs/heads/mdm-ss-mgr.lnx.1.0.c9"/>
+  <project name="meta-rust" remote="clo-le" revision="d0663639a08ed60bb83fd6eb99e3e2045b21b53c" upstream="refs/heads/caf_migration/meta-rust/master"/>
+  <project name="meta-selinux" path="poky/meta-selinux" remote="clo-le" revision="bae51859f0dbcdde9fd563d15128a6dbbb816801" upstream="refs/heads/yocto/master"/>
+  <project name="clo/la/platform/bootable/recovery" path="bootable/recovery" revision="26926d847e32818f231a5f7d8a6b9cf36a674504" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/build_repo" path="android_compat/build" revision="964200cd7422e5f023d36749c0634065d486ec47" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/automotive/platform/external/Open-AVB" path="vehiclenetwork/Open-AVB" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/external/bsdiff" path="external/bsdiff" revision="3358bd0b08ad28aa0534c2ff28f93ef297e4a570" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/external/compat-wireless" path="external/compat-wireless" revision="0143c07f3b1594a9259b7a0fe041deb5f4db8099" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13"/>
+  <project name="clo/la/platform/external/libselinux" path="external/libselinux" revision="ee539d24828440eda6115da4f300937383c6a98d" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/external/libunwind" path="external/libunwind" revision="157a1805420b856673d79ce69bfbf495505b378d" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/external/safe-iop" path="external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="a69060fea48c63ef1f108df195a75a3182deeac9" upstream="refs/heads/wlan-service.lnx.1.0.c13" dest-branch="refs/heads/wlan-service.lnx.1.0.c13"/>
+  <project name="clo/la/platform/hardware/libhardware" path="hardware/libhardware" revision="5f977520aa41659d8c51ffe16ba9611b72944388" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="0ffe5e34f48c75709e12ea419d84fa2e909fd2a9" upstream="refs/heads/audio-hal.lnx.4.0.c5" dest-branch="refs/heads/audio-hal.lnx.4.0.c5" groups="qcom,default"/>
+  <project name="clo/la/platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="5220261f3ef4a89629b1295e446a52a463cfa27f" upstream="refs/heads/location.lnx.2.9.c6" dest-branch="refs/heads/location.lnx.2.9.c6"/>
+  <project name="clo/la/platform/hardware/ril" path="telephony/services/ril" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/platform/init_mss" path="mdm-ss-mgr/init_mss" revision="0fe85ac3493ce84e338d65e2e11232dc59241289" upstream="refs/heads/mdm-ss-mgr.lnx.1.0.c9" dest-branch="refs/heads/mdm-ss-mgr.lnx.1.0.c9"/>
+  <project name="clo/la/platform/system/core" path="system/core" revision="f1c83135e792277cd1d16c14c96c7803a10d3d1d" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/system/extras" path="system/extras" revision="7f1dbd8504325688d8122bf237cdb2dc9d2c8353" upstream="refs/heads/lv-blast.lnx.1.0.c1" dest-branch="refs/heads/lv-blast.lnx.1.0.c1"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/Ethernet" path="vehiclenetwork/ethernet" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="data-ipa-cfg-mgr" revision="904074658f66043a5568895654408e90a634fb89" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/dataservices" path="data-oss" revision="597482dad495d5f087b7c78264b95adb2968cc88" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/kernel-tests/mm-audio" path="qcom-opensource/mm-audio" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/kernel/kernel-tests" path="qcom-opensource/kernel/kernel-tests" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/le-framework" path="frameworks" revision="e595bbfdbdcda26d76c58b9715c15fe9db0de216" upstream="refs/heads/le-frameworks.lnx.1.1.c4" dest-branch="refs/heads/le-frameworks.lnx.1.1.c4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/location" path="qcom-opensource/location" revision="df3d93c19b0e657f8644525460b6add61100cd51" upstream="refs/heads/location.lnx.2.9.c6" dest-branch="refs/heads/location.lnx.2.9.c6"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/mm-audio" path="audio/mm-audio-opensource" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/multimodule-mgr-oss" path="multimodule-mgr-oss" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/ptp-virtual" path="vehiclenetwork/ptp-virtual" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="0c1a59db50537d52ac9bef976bd26568debcba48" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/snaptel-sdk" path="telux" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="4a916f792ee26e8af67c69057ce1068dbb737e84" upstream="refs/heads/core-technologies.lnx.1.0.c30" dest-branch="refs/heads/core-technologies.lnx.1.0.c30"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="wlan/qcacld-2.0" revision="35d8ef080c514b89fe7e357c9ecd0ca913b28274" upstream="refs/heads/wlan-cld2.driver.lnx.1.0.c12" dest-branch="refs/heads/wlan-cld2.driver.lnx.1.0.c12"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/tools" path="wlan/tools" revision="74695062af7bbe1474b330c4f3278ff6de172b4c" upstream="refs/heads/wlan-tools.lnx.1.0.c20" dest-branch="refs/heads/wlan-tools.lnx.1.0.c20"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="wlan/utils/sigma-dut" revision="6d938ace8fab4fa5e7fbf78ed800482ab925278b" upstream="refs/heads/wlan-service.lnx.1.0.c13" dest-branch="refs/heads/wlan-service.lnx.1.0.c13"/>
+  <project name="clo/la/platform/vendor/qcom/thulium" path="android_compat/device/qcom/msm8996" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/pmipv6" revision="e1767066b85009c636668f768bf8a2e1a1695ba6" upstream="refs/heads/data.lnx.1.0.c13" dest-branch="refs/heads/data.lnx.1.0.c13" path="pmipv6"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="mdm-init" revision="37af4f09caf57761cca1227c977f9eea4c108bf1" upstream="refs/heads/wlan-tools.lnx.1.0.c20" dest-branch="refs/heads/wlan-tools.lnx.1.0.c20"/>
+  <project name="clo/le/qti-conf" path="poky/build/conf" revision="26cc17a1214a327b94258f1454ea3ae95804e5c6" upstream="refs/heads/aglmeta.lnx.1.0.c3" dest-branch="refs/heads/aglmeta.lnx.1.0.c3"/>
+  <project name="clo/le/sofia-sip" revision="refs/heads/LV.HB.1.1.4" path="sofia-sip"/>
+  <project name="clo/le/strongswan" path="external/strongswan" revision="refs/heads/LV.HB.1.1.4"/>
+  <project name="clo/le/systemd" path="external/systemd" revision="refs/heads/LV.HB.1.1.4"/>
+</manifest>
