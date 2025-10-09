@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="DISPLAY.LA.5.0.R1" project="techpack/display/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_TECHPACK_DISPLAY.LA.5.0.R1.00.00.00.000.076" targets="dummy"/>
+    <image name="KERNEL.PLATFORM.4.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_KERNEL.PLATFORM.4.0.R1.00.00.00.061.148" targets="dummy"/>
+    <image name="LE.FRAMEWORK.2.0.R6" project="le/framework/manifest" server="https://git.codelinaro.org/clo/le" tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R6_TARGET_ALL.01.319.067" targets="dummy"/>
+  </refs>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="aosphal-adaptation" path="src/aosphal-adaptation" revision="7b6313407da0d4b35d603ced0f629cf146f4c711" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r3-rel"/>
+  <project remote="clo-le" name="fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="4d32bde3e99ad9a2de2a1333235cabba179ceaa3" upstream="refs/heads/core-technologies.lnx.15.0.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="955df3262899c1370689ab26c0d5cb8c561a45ed" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r3-rel"/>
+  <project remote="clo-le" name="meta-qti-core" path="poky/meta-qti-core" revision="5f13fc643761e4e1b4e8e3c5cded7682ac77daa8" upstream="refs/heads/core-technologies.lnx.15.0.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-linuxsecurity" path="poky/meta-qti-linuxsecurity" revision="5890db921769ae9fff8884f34113ee3a99e3b481" upstream="refs/heads/linuxsecurity.lnx.2.0.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-security" path="poky/meta-qti-security" revision="32ef84793b8328a795b437c884c289f9277880c8" upstream="refs/heads/sec-userspace.lnx.14.0.r18-rel"/>
+  <project remote="clo-le" name="meta-qti-touch" path="poky/meta-qti-touch" revision="dd70da872ae38e044bc939edcfdfb503e036503b" upstream="refs/heads/touch-kernel.lnx.11.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/touch-drivers" path="src/vendor/qcom/opensource/touch-drivers" revision="e37445c65cbea233937ac8aef980b3191892f1c8" upstream="refs/heads/touch-kernel.lnx.11.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="src/display/vendor/qcom/opensource/commonsys-intf/display" revision="394d81dba9c87bd0a0b40438b9eff2dd890fe2e5" upstream="refs/heads/display-sysintf.lnx.15.0.r1-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/dsp-devicetree" path="src/vendor/qcom/opensource/dsp-devicetree" revision="5d3dba5369902e6f39ca66099fcda775fed041fc" upstream="refs/heads/dsp-kernel.lnx.2.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/dsp-kernel" path="src/vendor/qcom/opensource/dsp-kernel" revision="928712a21bc47646efb39e7bf792a8ec5dcd1043" upstream="refs/heads/dsp-kernel.lnx.2.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/psi_daemon" path="src/vendor/qcom/opensource/psi_daemon" revision="2882da988cfd69513d2e814818332af2a7b131ee" upstream="refs/heads/kernel.apps.lnx.3.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="6f861f3f345294fb23fedb187b1bf97f7691df23" upstream="refs/heads/sec-kernel.lnx.14.0.r18-rel"/>
+  <project remote="clo-le" name="qc/components/dsp-services-vndr.lnx/oe-recipes" path="poky/meta-qti-bsp/recipes-multimedia/adsprpc" revision="2947cfa32dce92364b20c10c43c3b0e4d301c218" upstream="refs/heads/dsp-kernel.lnx.2.0.r3-rel"/>
+</manifest>
