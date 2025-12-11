@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="clo/la/platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="424d4da8d8cc35a6fcb6ed2a88e7e054339e4ada" upstream="refs/heads/auto-wlan-aosp.lnx.16.4" dest-branch="refs/heads/auto-wlan-aosp.lnx.16.4"/>
+  <project name="clo/la/platform/system/qcom" path="vendor/qcom/opensource/softap" revision="af6c12786bd66fb2d4f205d223085b7179020692" upstream="refs/heads/auto-wlan-service-mcc.lnx.1.4" dest-branch="refs/heads/auto-wlan-service-mcc.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="7bf461223ce0e7115196747214ee7da5f3d85c2c" upstream="refs/heads/auto-wlan-api.lnx.1.4" dest-branch="refs/heads/auto-wlan-api.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/platform" path="vendor/qcom/opensource/wlan/platform" revision="96a1d1007b2407d0670c1952e7fd52811894be9a" upstream="refs/heads/auto-wlan-platform.lnx.2.4" dest-branch="refs/heads/auto-wlan-platform.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="7dd52ab20ec94f51974f446e47684821e4791c35" upstream="refs/heads/auto-wlan-cmn-driver.lnx.2.4" dest-branch="refs/heads/auto-wlan-cmn-driver.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="d48313a2d036ce50ea2397e10a6e9d4da6f4cc93" upstream="refs/heads/auto-wlan-cld3-driver.lnx.2.4" dest-branch="refs/heads/auto-wlan-cld3-driver.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="43532931339163247fb2adbe78f0c9178983e7c6" upstream="refs/heads/auto-wlan-service-mcc.lnx.1.4" dest-branch="refs/heads/auto-wlan-service-mcc.lnx.1.4"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/wlan-devicetree" path="vendor/qcom/opensource/wlan/wlan-devicetree" revision="ad1e7d719db64ac9cb5848efe7a150f5ca8b1f6c" upstream="refs/heads/auto-wlan-platform.lnx.2.4" dest-branch="refs/heads/auto-wlan-platform.lnx.2.4"/>
+  <project name="clo/la/platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="932de34754789b2445ad331228affd24e77f5156" upstream="refs/heads/auto-wlan-service-mcc.lnx.1.4" dest-branch="refs/heads/auto-wlan-service-mcc.lnx.1.4"/>
+</manifest>
