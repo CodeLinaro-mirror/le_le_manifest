@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="platform/csm-utils" path="src/platform/csm-utils" revision="89eb4ff0493560ee9db0c97a61aa2ae0a92a4279" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/eks-sw-oss" path="src/platform/eks-sw-oss" revision="e95af8011e39db96af4e7677ff14bb078f98c4e6" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/external/infralogmgr" path="src/platform/external/infralogmgr" revision="21baf0478629214d2d30c3534aece218df18f3f4" upstream="refs/heads/infralogmgr.lnx.1.0"/>
+  <project remote="clo-le" name="platform/external/mplanehostsw" path="src/platform/external/mplanehostsw" revision="10b3226627aa01cf2d866634dec105953cb26c06" upstream="refs/heads/csm_mplane_hostsw.lnx.1.0"/>
+  <project remote="clo-le" name="platform/mhi-core-lib" path="src/platform/mhi-core-lib" revision="8e26f55d84b7ed75cddef0f1cb2c0ec67a5d8650" upstream="refs/heads/core-technologies-mhi-host.lnx.1.0"/>
+  <project remote="clo-le" name="platform/mhi-host" path="src/platform/mhi-host" revision="a4f2ad5a7ad7e9ce515d9b8ee2d73a2b910d7310" upstream="refs/heads/core-technologies-mhi-host.lnx.1.0"/>
+  <project remote="clo-le" name="platform/ocp-sw-oss" path="src/platform/ocp-sw-oss" revision="87b9715df9c3152be94c29e267f761565883110e" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/dp-driver" path="src/platform/vendor/qcom-opensource/dp-driver" revision="a2fd3dae7617c869da764ebe8367f577f8e2ccbf" upstream="refs/heads/dp-driver.lnx.1.0"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/dp-lib" path="src/platform/vendor/qcom-opensource/dp-lib" revision="ff37650471b59568919f6ae7e8ac14436907a42c" upstream="refs/heads/dp-lib.lnx.1.0"/>
+</manifest>
