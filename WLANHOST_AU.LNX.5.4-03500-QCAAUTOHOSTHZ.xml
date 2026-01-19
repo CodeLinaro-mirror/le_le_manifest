@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="clo/le/meta-qti-connectivity" path="sources/meta-qti-connectivity" revision="b179bb23ee9376f04b14f38b4ad2c2f4b33f56fd" upstream="refs/heads/connectivity-service.lnx.2.0.1" dest-branch="refs/heads/connectivity-service.lnx.2.0.1"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="75ea498b607205a46c87e24ff2c89cad29b57bfc" upstream="refs/heads/wlan-service.lnx.1.3.c98" dest-branch="refs/heads/wlan-service.lnx.1.3.c98"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan-cnss-core" path="sources/wlan-opensource/wlan-cnss-core" revision="96e016cba6fdf4d3f784aa98e80227b56258d52a" upstream="refs/heads/connectivity-service.lnx.2.0.1" dest-branch="refs/heads/connectivity-service.lnx.2.0.1"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="7f4f8da0fecc27c1793fb4cbd1aec25aca45163f" upstream="refs/heads/wlan-api.lnx.1.0.c119" dest-branch="refs/heads/wlan-api.lnx.1.0.c119"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="b6eca68d9a3ab93ea42a5c9faed0b8eee205a659" upstream="refs/heads/wlan-cmn.driver.lnx.2.0.c111" dest-branch="refs/heads/wlan-cmn.driver.lnx.2.0.c111"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="25264786483f62ce74c19993564457f774df2169" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.c111" dest-branch="refs/heads/wlan-cld3.driver.lnx.2.0.c111"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/tools" path="wlan/tools" revision="8fa2b9c594a21219e726898f6f635159f2e2361f" upstream="refs/heads/wlan-tools.lnx.1.0.c107" dest-branch="refs/heads/wlan-tools.lnx.1.0.c107"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="6c05b108f84458a29466eff67a1cd85e94f8ea14" upstream="refs/heads/wlan-service.lnx.1.3.c98" dest-branch="refs/heads/wlan-service.lnx.1.3.c98"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="vendor/qcom/opensource/wlan/mdm-init" revision="a4783b26e6c581d33468bf747cdad2e84cc8055c" upstream="refs/heads/wlan-tools.lnx.1.0.c107" dest-branch="refs/heads/wlan-tools.lnx.1.0.c107"/>
+</manifest>
