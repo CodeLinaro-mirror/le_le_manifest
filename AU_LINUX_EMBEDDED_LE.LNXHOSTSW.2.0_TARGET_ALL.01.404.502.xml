@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/ype" name="clo-ype"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-ype" name="external/github.com/Freescale/meta-freescale" path="sources/meta-freescale" revision="0627128b341cfb2bef7a0832ce8cac0ce1127f13" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/Freescale/meta-freescale-distro" path="sources/meta-freescale-distro" revision="b9d6a5d9931922558046d230c1f5f4ef6ee72345" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/kraj/meta-clang" path="sources/meta-clang" revision="2b7433611d80f6d0ee1b04156fa91fc73d3c2665" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/nxp-qoriq/meta-qoriq" path="sources/meta-qoriq" revision="533e78f92774326d48f15adb5982a516fe114ee7" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/openembedded/meta-openembedded" path="sources/meta-openembedded" revision="72018ca1b1a471226917e8246e8bbf9a374ccf97" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/OSSystems/meta-browser" path="sources/meta-browser" revision="dc31889c0899971def535dc1c040edf18bc16691" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/github.com/SolidRun/meta-solidrun-arm-lx2xxx" path="sources/meta-solidrun-arm-lx2xxx" revision="99182ca6637734c67af4ec967f18e8a2884caa13" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-arm" path="sources/meta-arm" revision="950a4afce46a359def2958bd9ae33fc08ff9bb0d" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-cloud-services" path="sources/meta-cloud-services" revision="61d37af7f412aa1ecacdf584faf0fba300f7d58e" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-security" path="sources/meta-security" revision="459d837338ca230254baa2994f870bf6eb9d0139" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-selinux" path="sources/meta-selinux" revision="3aff015697fa056b4af83b1c9ba44eca346a8a37" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/meta-virtualization" path="sources/meta-virtualization" revision="6f3c1d8f90947408a6587be222fec575a1ca5195" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-ype" name="external/yoctoproject.org/poky" path="sources/poky" revision="200d12b6a58ad961d60a7774ca0f7a9d29498724" upstream="refs/heads/le-host-yocto.lnx.1.0" groups="yocto-lnxhost"/>
+  <project remote="clo-le" name="platform/csm-utils" path="src/platform/csm-utils" revision="3105cfbd3ece9161c7625ce8a69296dddbe226bb" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/eks-sw-oss" path="src/platform/eks-sw-oss" revision="7c9cad1a3cadba31618fc9b8d10c735848270cf0" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/external/infralogmgr" path="src/platform/external/infralogmgr" revision="d9fd59f1eb68cf4e8ca3ea03cbb6c4720cfe1a4b" upstream="refs/heads/infralogmgr.lnx.1.0"/>
+  <project remote="clo-le" name="platform/external/mplanehostsw" path="src/platform/external/mplanehostsw" revision="b904890766d47213d18db96fb53b395429e5c46a" upstream="refs/heads/csm_mplane_hostsw.lnx.1.0"/>
+  <project remote="clo-le" name="platform/meta-qcom-x100" path="sources/meta-qcom-x100" revision="e8f58b293614d3abf5accca3dd1f41239f5932a5" upstream="refs/heads/le-host.lnx.2.0" groups="yocto-lnxhost"/>
+  <project remote="clo-le" name="platform/mhi-core-lib" path="src/platform/mhi-core-lib" revision="6df633807c001852a5caea47c6e29f8d7028d239" upstream="refs/heads/core-technologies-mhi-host.lnx.1.0"/>
+  <project remote="clo-le" name="platform/mhi-host" path="src/platform/mhi-host" revision="e683f133b2f8d2aee25553b1d25074d620da02cd" upstream="refs/heads/core-technologies-mhi-host.lnx.1.0"/>
+  <project remote="clo-le" name="platform/ocp-sw-oss" path="src/platform/ocp-sw-oss" revision="78fffe2e7d9497ee2fa231db3f3280d929464da6" upstream="refs/heads/le-host.lnx.2.0"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/dp-driver" path="src/platform/vendor/qcom-opensource/dp-driver" revision="f414edddfa1c57de4c80129581620dfeee17ce6a" upstream="refs/heads/dp-driver.lnx.1.0"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/dp-lib" path="src/platform/vendor/qcom-opensource/dp-lib" revision="ce6ee2c637c816917a44edfca87f0e5279b1de9d" upstream="refs/heads/dp-lib.lnx.1.0"/>
+</manifest>
