@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="DISPLAY.LA.6.0.R1" project="techpack/display/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_TECHPACK_DISPLAY.LA.6.0.R1.00.00.00.000.142" targets="dummy"/>
+    <image name="KERNEL.PLATFORM.5.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_KERNEL.PLATFORM.5.0.R1.00.00.00.099.154" targets="dummy"/>
+    <image name="LE.FRAMEWORK.2.0.R11" project="le/framework/manifest" server="https://git.codelinaro.org/clo/le" tag="AU_LINUX_EMBEDDED_LE.FRAMEWORK.2.0.R11_TARGET_ALL.01.319.102" targets="dummy"/>
+  </refs>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="aosphal-adaptation" path="src/aosphal-adaptation" revision="7b6313407da0d4b35d603ced0f629cf146f4c711" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r6-rel"/>
+  <project remote="clo-le" name="fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="4d32bde3e99ad9a2de2a1333235cabba179ceaa3" upstream="refs/heads/core-technologies.lnx.16.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="955df3262899c1370689ab26c0d5cb8c561a45ed" upstream="refs/heads/aosphal-le-adaptation.lnx.3.0.r6-rel"/>
+  <project remote="clo-le" name="meta-qti-avf" path="poky/meta-qti-avf" revision="40d437a17418cb04f69c0d1d2840d9870623adb6" upstream="refs/heads/le-avf.lnx.1.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-core" path="poky/meta-qti-core" revision="5a6608d0ad4024417b3b247c87a92b31eeccfdb4" upstream="refs/heads/core-technologies.lnx.16.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-linuxsecurity" path="poky/meta-qti-linuxsecurity" revision="069fc00bc078b801e3490c43725687f2cbcb0c0d" upstream="refs/heads/linuxsecurity.lnx.2.1.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-security" path="poky/meta-qti-security" revision="4472470223984cc5c49165de5f407f6cad695cb6" upstream="refs/heads/sec-userspace.lnx.14.0.r33-rel"/>
+  <project remote="clo-le" name="meta-qti-touch" path="poky/meta-qti-touch" revision="ce3b1c6d8102b9279953b4fa1d627e39eb8ee0ca" upstream="refs/heads/touch-kernel.lnx.11.0.r10-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/touch-drivers" path="src/vendor/qcom/opensource/touch-drivers" revision="757ff124b44aef103373f1e130f33b82e826f0a5" upstream="refs/heads/touch-kernel.lnx.11.0.r10-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="src/display/vendor/qcom/opensource/commonsys-intf/display" revision="1e531b4562e8ded5110ee0514dc8f3db2f54c6fd" upstream="refs/heads/display-sysintf.lnx.15.0.r13-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/vm-interlink" path="src/vendor/qcom/opensource/vm-interlink" revision="c9f19bc915fcca5ec5c3e93603f7fee63c58795c" upstream="refs/heads/le-avf.lnx.1.0.r2-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/dsp-devicetree" path="src/vendor/qcom/opensource/dsp-devicetree" revision="8e9b8c80d45d5d417f152aa00ab4cae6a99c2490" upstream="refs/heads/dsp-kernel.lnx.3.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/dsp-kernel" path="src/vendor/qcom/opensource/dsp-kernel" revision="33d908112cbf5037544abe7d1fc20d8e859f92fd" upstream="refs/heads/dsp-kernel.lnx.3.0.r3-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/psi_daemon" path="src/vendor/qcom/opensource/psi_daemon" revision="315249f93482b751ae3440b01f3959375002f323" upstream="refs/heads/kernel.apps.lnx.3.0.r10-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="3e1fc07fdac7a0c7514eab08302cc0a1b36cef8c" upstream="refs/heads/sec-kernel.lnx.14.0.r33-rel"/>
+  <project remote="clo-le" name="qc/components/dsp-services-vndr.lnx/oe-recipes" path="poky/meta-qti-bsp/recipes-multimedia/adsprpc" revision="d4463d1c26526f42bf7a6bdd4ffbca7e49f9ad7c" upstream="refs/heads/dsp-kernel.lnx.3.0.r3-rel"/>
+</manifest>
