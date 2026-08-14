@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="DISPLAY.LA.7.0.R1" project="techpack/display/manifest" server="https://git.codelinaro.org/clo/private/la-vendor-17-6-0" tag="AU_TECHPACK_DISPLAY.LA.7.0.R1.00.00.00.000.088" targets="dummy"/>
+    <image name="KERNEL.PLATFORM.6.0.R1" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/private/kernel-platform-6-0" tag="AU_LINUX_KERNEL.PLATFORM.6.0.R1.00.00.00.194.061" targets="dummy"/>
+  </refs>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/private/kernel-devicetree" name="clo-private-kernel-devicetree"/>
+  <default remote="clo-le" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-le" name="aosphal-adaptation" path="src/aosphal-adaptation" revision="839a5dde5354ee0ba1163f17de19814820b85a2c" upstream="refs/heads/aosphal-le-adaptation.lnx.5.0.r4-rel"/>
+  <project remote="clo-le" name="external/openembedded.org/meta-openembedded" path="poky/meta-openembedded" revision="6c9f1f8d4538119803bf793747b65e4d23c33544" upstream="refs/heads/oe-meta-openembedded.lnx.5.0.r7-rel"/>
+  <project remote="clo-le" name="external/yoctoproject.org/poky" path="poky" revision="dc4fe2810d79cb0a6dd7ffd3b728307960bfb1a2" upstream="refs/heads/yocto-upstream.lnx.6.0.r7-rel"/>
+  <project remote="clo-le" name="fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="fde8587473c1283b4052e4469f5f5c649485a2f6" upstream="refs/heads/core-technologies.lnx.0.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-aosphal-adaptation" path="poky/meta-qti-aosphal-adaptation" revision="f8c0a5020e2d9922aa6acf49739cee72e8660e17" upstream="refs/heads/aosphal-le-adaptation.lnx.5.0.r4-rel"/>
+  <project remote="clo-le" name="meta-qti-avf" path="poky/meta-qti-avf" revision="d75b1b02d98a3c927471206c48439e4f99c14ea7" upstream="refs/heads/le-avf.lnx.1.0.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-bsp" path="poky/meta-qti-bsp" revision="d8a0466cc1656041ed021b3fd79c9d5d9fda3a4a" upstream="refs/heads/yocto.lnx.6.0.r5-rel"/>
+  <project remote="clo-le" name="meta-qti-core" path="poky/meta-qti-core" revision="fd8b7ad31c4d3ab6b8590aa252d39ef4119cd66f" upstream="refs/heads/core-technologies.lnx.0.0.r2-rel"/>
+  <project remote="clo-le" name="meta-qti-distro" path="poky/meta-qti-distro" revision="f99cc5208cc673e15392bf88c06b08c49eb1ec88" upstream="refs/heads/yocto.lnx.6.0.r5-rel"/>
+  <project remote="clo-le" name="meta-qti-linuxsecurity" path="poky/meta-qti-linuxsecurity" revision="a01b36b81d8ce7005b0680175a403211e942889b" upstream="refs/heads/linuxsecurity.lnx.3.0.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-security" path="poky/meta-qti-security" revision="765fef4e3e42014101ab4d9c0cb5c4a9ccfcfb02" upstream="refs/heads/sec-userspace.lnx.14.0.r51-rel"/>
+  <project remote="clo-le" name="meta-qti-sepolicy" path="poky/meta-qti-sepolicy" revision="d2a427b88f12dd861077167e2e9c1ca0c1582fc6" upstream="refs/heads/vm-sepolicy.lnx.6.0.r1-rel"/>
+  <project remote="clo-le" name="meta-qti-touch" path="poky/meta-qti-touch" revision="5a238e781e64fecebe6eccb74acf6e4d993fefec" upstream="refs/heads/touch-kernel.lnx.11.0.r30-rel"/>
+  <project remote="clo-le" name="meta-selinux" path="poky/meta-selinux" revision="e58d2196adcebf5eadd70099086915e57d080b43" upstream="refs/heads/vm-sepolicy.lnx.6.0.r1-rel"/>
+  <project remote="clo-le" name="OTA/build" path="src/OTA/build" revision="330a752b1a50b05b306bb2e8f9ed3bf96ca586ce" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/device/qcom/common" path="src/OTA/device/qcom/common" revision="bd1b553c61151e9cbf9abe939ca87aa24b9a177d" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/external/bsdiff" path="src/OTA/external/bsdiff" revision="0db1c9b59c1c0479e2753cb8cf98a09d62bc4ff0" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/platform/external/libdivsufsort" path="src/OTA/external/libdivsufsort" revision="70a94c7454df52eefe5da0a3cd1c10952742d3e6" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/recovery" path="src/OTA/recovery" revision="24f5467a50b4ffcad910ecf5bf5d0a25f817fd15" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/system/core" path="src/OTA/system/core" revision="af2f7d7bd17c26a3306ccf8f707d8a772841e563" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="OTA/system/extras" path="src/OTA/system/extras" revision="4814452eebac0b1991fb80f634536d7a6130ef5f" upstream="refs/heads/le-ota.lnx.2.0.r39-rel"/>
+  <project remote="clo-le" name="platform/external/safe-iop" path="src/external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="refs/heads/le-blast.lnx.2.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/core" path="src/system/core" revision="d95272f9d52972e5b5c3a51fdd0611342ad1c795" upstream="refs/heads/le-blast.lnx.2.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/extras" path="src/system/extras" revision="686e28aaac44b22270ca8114cb1fff48ae884f15" upstream="refs/heads/le-blast.lnx.2.0.r35-rel"/>
+  <project remote="clo-le" name="platform/system/memory_repo" path="src/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.1.0.r101-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="src/system/memory/libdmabufheap" revision="c4944ad6ba34dba200a4f127b43e2c94e109fb99" upstream="refs/heads/memory-le-apps.lnx.1.0.r101-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libmeminfo" path="src/system/memory/libmeminfo" revision="e5690f41db4637600d40b74d7eb8207837edfb85" upstream="refs/heads/memory-le-apps.lnx.1.0.r101-rel"/>
+  <project remote="clo-le" name="platform/vendor/opensource/touch-drivers" path="src/vendor/qcom/opensource/touch-drivers" revision="acbb5b59783e7d268fb72604c1c113cd7f4c5357" upstream="refs/heads/touch-kernel.lnx.11.0.r30-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="src/display/vendor/qcom/opensource/commonsys-intf/display" revision="dcc696e9871573996a5f76124c1e5ada6addf7e7" upstream="refs/heads/display-sysintf.lnx.17.0.r5-rel"/>
+  <project remote="clo-private-kernel-devicetree" name="platform/vendor/qcom-opensource/eSE-devicetree" path="vendor/qcom/opensource/eSE-devicetree" revision="602c6c7a08fc4f288e970fba83c0234a3943e864" upstream="refs/heads/sec-kernel.lnx.14.0.r54-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/le-framework" path="src/frameworks" revision="6a7de6c8e877f04c61dd8b80a7db6442b8e00e0f" upstream="refs/heads/le-frameworks.lnx.3.0.r35-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/vm-interlink" path="vendor/qcom/opensource/vm-interlink" revision="f62e26c2c6aab4667a1068ca73dd352514438966" upstream="refs/heads/le-avf.lnx.1.0.r1-rel"/>
+  <project remote="clo-private-kernel-devicetree" name="platform/vendor/qcom/opensource/dsp-devicetree" path="src/vendor/qcom/opensource/dsp-devicetree" revision="f70f8c809a37b81dddb05bd3e231a7856e55850a" upstream="refs/heads/dsp-kernel.lnx.0.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/dsp-kernel" path="src/vendor/qcom/opensource/dsp-kernel" revision="83067834cc6f24059cfada26f6f7b508be942de3" upstream="refs/heads/dsp-kernel.lnx.0.0.r4-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/psi_daemon" path="src/vendor/qcom/opensource/psi_daemon" revision="abede7ee15e8cb916f2ab8ebfb00806826005225" upstream="refs/heads/kernel.apps.lnx.3.0.r33-rel"/>
+  <project remote="clo-private-kernel-devicetree" name="platform/vendor/qcom/opensource/securemsm-devicetree" path="src/vendor/qcom/opensource/securemsm-devicetree" revision="b827b2f3f6f0cb35268e92baf51dee7d6aaf0c47" upstream="refs/heads/sec-kernel.lnx.14.0.r54-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="a5e4ce43db505b8f3ecd8c10a18af6d3aaca2270" upstream="refs/heads/sec-kernel.lnx.14.0.r54-rel"/>
+  <project remote="clo-le" name="platform/vendor/st/opensource/eSE-driver" path="vendor/st/opensource/eSE-driver" revision="089644b59484453fc933ff28ebe39d25955b2bc7" upstream="refs/heads/sec-kernel.lnx.14.0.r54-rel"/>
+  <project remote="clo-le" name="qc/components/dsp-services-vndr.lnx/oe-recipes" path="poky/meta-qti-bsp/recipes-multimedia/adsprpc" revision="8d55042260cd519e9a50b930e2f817ecc9a91dbd" upstream="refs/heads/dsp-kernel.lnx.0.0.r4-rel"/>
+  <project remote="clo-le" name="qc/components/le-blast.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-blast" revision="2e96b7f4cec364b49b78ca98f194a5f5477e3ed9" upstream="refs/heads/le-blast.lnx.2.0.r35-rel"/>
+  <project remote="clo-le" name="qc/components/le-frameworks.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-frameworks" revision="199f4a7cca02b9791bb3363ee19d010f6dd0878d" upstream="refs/heads/le-frameworks.lnx.3.0.r35-rel"/>
+  <project remote="clo-le" name="qti-conf" path="poky/qti-conf" revision="8b358b225445c77d48852c5b873057fc9d134d71" upstream="refs/heads/yocto.lnx.6.0.r5-rel">
+    <linkfile dest="setup-environment" src="set_bb_env.sh"/>
+  </project>
+</manifest>
