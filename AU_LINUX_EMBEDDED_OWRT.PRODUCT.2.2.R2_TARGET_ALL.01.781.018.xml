@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image name="KERNEL.PLATFORM.2.1.R15" project="kernelplatform/manifest" server="https://git.codelinaro.org/clo/la" tag="AU_LINUX_KERNEL.PLATFORM.2.1.R15.00.00.00.195.007" targets="dummy"/>
+  </refs>
+    <remote fetch="https://git.codelinaro.org/clo/filesystems" name="clo-filesystems"/>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+    <remote fetch="https://git.codelinaro.org/clo/le" name="clo-le"/>
+    <remote fetch="https://git.codelinaro.org/clo/qsdk" name="clo-qsdk"/>
+  <default remote="clo-filesystems" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-filesystems" name="fs/external/mtd-utils" path="owrt/src/filesystems/mtd-utils" revision="45523d5b5b0063ae4890007473440154fa0bbcec" upstream="refs/heads/core-technologies.lnx.14.0.r78-rel"/>
+  <project remote="clo-le" name="mdm/reboot-daemon" path="owrt/src/mdm-ss-mgr/reboot-daemon" revision="786f011058c6ce1186e03e7b38b4701b0e1de5a2" upstream="refs/heads/mdm-ss-mgr.lnx.1.2.r20-rel"/>
+  <project remote="clo-le" name="meta-qti-agm" path="owrt/owrt-qti-agm" revision="14aa46b463d2b0654c0f20aef5ca729a0ad6b150" upstream="refs/heads/audio-platform-intf.lnx.1.0.r28-rel"/>
+  <project remote="clo-le" name="meta-qti-audio" path="owrt/owrt-qti-audio" revision="1ec283425d823a974751cbe515cecaf44339b1e9" upstream="refs/heads/audio-qahw.lnx.1.0.r26-rel"/>
+  <project remote="clo-le" name="meta-qti-bt" path="owrt/owrt-qti-bt" revision="2fbd2b2880e2c9af0ac04991dbabe9e503f3de61" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-le" name="meta-qti-core" path="owrt/owrt-qti-core" revision="3000e1c4913b478e1bd57bca221676b6f002fc2c" upstream="refs/heads/core-technologies.lnx.14.0.r78-rel"/>
+  <project remote="clo-le" name="meta-qti-data" path="owrt/owrt-qti-data" revision="6df556e7f7eb3165d8a009d0fd61a3195895b686" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="meta-qti-location" path="owrt/owrt-qti-location" revision="7d08f76910728190d13a2e49f8ed071829bee791" upstream="refs/heads/location.lnx.8.0.r69-rel"/>
+  <project remote="clo-le" name="meta-qti-qal" path="owrt/owrt-qti-pal" revision="648da54a25dff8aaaec0277d6cd8d0491965f002" upstream="refs/heads/audio-platform-intf.lnx.1.0.r28-rel"/>
+  <project remote="clo-le" name="meta-qti-security" path="owrt/owrt-qti-security" revision="242bb1319bd7529b81a0eab4887a9648a6a2bc0c" upstream="refs/heads/sec-userspace.lnx.13.0.r102-rel"/>
+  <project remote="clo-le" name="meta-qti-ss-mgr" path="owrt/owrt-qti-ss-mgr" revision="b29e02f06e3c4a1640f69155141ca0ca26288a9c" upstream="refs/heads/mdm-ss-mgr.lnx.1.2.r20-rel"/>
+  <project remote="clo-le" name="meta-qti-ssdk" path="owrt/owrt-qti-ssdk" revision="49b7671002edba5d7fa6dedd8d430c285f022607" upstream="refs/heads/qca-ssdk-lklm-oss.lnx.2.0.r20-rel"/>
+  <project remote="clo-le" name="meta-qti-wlan" path="owrt/owrt-qti-wlan" revision="3f55503ab05a176fe72b572692005ba2de013274" upstream="refs/heads/wlan-service-mdm.lnx.1.0.r21-rel"/>
+  <project remote="clo-qsdk" name="oss/hyfi/qca-hyfi-bridge" path="owrt/src/ipq/qca-hyfi-bridge" revision="abc10c24385dd8ce473c9fe4fb8f6fda2f656e23" upstream="refs/heads/win_ezmesh.pinnacles.1.2.r14-rel"/>
+  <project remote="clo-qsdk" name="oss/lklm/emesh-sp" path="owrt/src/ipq/emesh-sp" revision="da216b5bac3fe0d90e50e8de655ff1085a9bb16d" upstream="refs/heads/win_ezmesh.pinnacles.1.2.r14-rel"/>
+  <project remote="clo-le" name="oss/lklm/qca-phy" path="owrt/src/qcom-opensource/qca-phy" revision="70b2693a7863a6bd0f7133e1f00148259ab68e38" upstream="refs/heads/qca-ssdk-lklm-oss.lnx.2.0.r20-rel"/>
+  <project remote="clo-qsdk" name="oss/system/feeds/owrt-qti-ipq" path="owrt/owrt-qti-ipq" revision="f0d5c8998297c3a8621cf8c5bdaa5ebac4d63d80" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-qsdk" name="oss/system/feeds/wlan/utils" path="owrt/owrt-qti-ipq-prop/wlan_utils" revision="211433a0661f29ece5d8d706a903bc141f707dde" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-qsdk" name="oss/wifi/qca-cnss" path="owrt/src/ipq/qca-cnss" revision="099504cde98654065fe37b359b2d9cabcf594f7f" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-le" name="OTA/build" path="owrt/src/OTA/build" revision="524774d8636f37761eb5a3115bf41b59c638c395" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/device/qcom/common" path="owrt/src/OTA/device/qcom/common" revision="79ed8efe029a0dc5496cf8162b1279c11d06982b" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/external/bsdiff" path="owrt/src/OTA/external/bsdiff" revision="e55c6df9e832f2ac332dd47661fa8571076d37aa" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/platform/external/libdivsufsort" path="owrt/src/OTA/external/libdivsufsort" revision="ed35204c6d910e83aefc343417e5b2d7ebe0d23f" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/recovery" path="owrt/src/OTA/recovery" revision="fbfa7114c7a5e0804eaf340eef50c76a12229135" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/system/core" path="owrt/src/OTA/system/core" revision="106cd1462a82356aa7b74b171aea62fcb98ca79a" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="OTA/system/extras" path="owrt/src/OTA/system/extras" revision="4814452eebac0b1991fb80f634536d7a6130ef5f" upstream="refs/heads/owrt-ota.lnx.1.0.r16-rel"/>
+  <project remote="clo-le" name="owrt-qti-bsp" path="owrt/owrt-qti-bsp" revision="1ab869f6d008f07034b513a7f08c4371b284ac67" upstream="refs/heads/openwrt.lnx.2.0.r16-rel"/>
+  <project remote="clo-le" name="owrt-qti-conf" path="owrt/owrt-qti-conf" revision="e495170499d3b3bfbad5ace43de464fbd8ee3c82" upstream="refs/heads/openwrt.lnx.2.0.r16-rel">
+    <linkfile dest="owrt/build.py" src="build.py"/>
+  </project>
+  <project remote="clo-le" name="owrt-qti-gplv2" path="owrt/owrt-qti-gplv2" revision="b1bcc8e4700303f2acd998a8d7b5aa09d85d9e5b" upstream="refs/heads/openwrt.lnx.2.0.r16-rel"/>
+  <project remote="clo-le" name="owrt-qti-sepolicy" path="owrt/owrt-qti-sepolicy" revision="e8612153706fa759c7fc2b52b76d2fb7d8885cbd" upstream="refs/heads/owrt-sepolicy.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="owrt/openwrt" path="owrt" revision="0c7f723a68f7101e849aa2a186a55948087cb394" upstream="refs/heads/openwrt-upstream.lnx.23.05.r5-rel"/>
+  <project remote="clo-le" name="owrt/targets" path="owrt/target/linux" revision="3d84a7f2192d5ed9d60b79c2562405acca471161" upstream="refs/heads/openwrt.lnx.2.0.r16-rel"/>
+  <project remote="clo-la" name="platform/external/compat-wireless" path="owrt/src/external/compat-wireless" revision="0143c07f3b1594a9259b7a0fe041deb5f4db8099" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-la" name="platform/external/safe-iop" path="owrt/src/external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="refs/heads/le-blast.lnx.1.4.r59-rel"/>
+  <project remote="clo-la" name="platform/external/wpa_supplicant_8" path="owrt/src/external/wpa_supplicant_8" revision="d3496b68595f3f0c9246d0f9a7378c1dd4baf06c" upstream="refs/heads/wlan-ks-service.lnx.5.0.r18-rel"/>
+  <project remote="clo-la" name="platform/hardware/libhardware" path="owrt/src/hardware/libhardware" revision="9162ada477002adac622bf066df2f9e5221cfd88" upstream="refs/heads/le-blast.lnx.1.4.r59-rel"/>
+  <project remote="clo-la" name="platform/hardware/qcom/audio" path="owrt/src/vendor/qcom/opensource/audio-hal/primary-hal" revision="d2d2cd12a96d5554dbc5abf3d2691198e012bfc3" upstream="refs/heads/audio-qahw.lnx.1.0.r26-rel"/>
+  <project remote="clo-le" name="platform/hardware/qcom/bt" path="owrt/src/hardware/qcom/bt" revision="3dbf2daa472493719f328f6b7374a7267c30a306" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-la" name="platform/hardware/qcom/gps" path="owrt/src/hardware/qcom/gps" revision="b1e60b87fa270f55a40909dccf4052fa9a4a0196" upstream="refs/heads/location.lnx.8.0.r69-rel"/>
+  <project remote="clo-la" name="platform/hardware/qcom/wlan" path="owrt/src/hardware/qcom/wlan" revision="5a0421cc3cc57bff9d33f4cfe85190052db6ac4a" upstream="refs/heads/wlan-aosp.lnx.7.0.r73-rel"/>
+  <project remote="clo-le" name="platform/init_mss" path="owrt/src/mdm-ss-mgr/init_mss" revision="e1db20af1ebf5d99429161e3ad213d75acfb696c" upstream="refs/heads/mdm-ss-mgr.lnx.1.2.r20-rel"/>
+  <project remote="clo-le" name="platform/qcom-opensource/bt" path="owrt/src/qcom-opensource/bt" revision="55fa92a30b92f1760d32ea73a56886d7f75bd2f5" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-la" name="platform/system/core" path="owrt/src/system/core" revision="1e4e8f3aadc39618b9afb46d260d2ed68cf4594e" upstream="refs/heads/le-blast.lnx.1.4.r59-rel"/>
+  <project remote="clo-la" name="platform/system/extras" path="owrt/src/system/extras" revision="0b9a300a6230724546606c7266f4244b9d93a948" upstream="refs/heads/le-blast.lnx.1.4.r59-rel"/>
+  <project remote="clo-le" name="platform/system/memory_repo" path="owrt/src/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.1.0.r110-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libdmabufheap" path="owrt/src/system/memory/libdmabufheap" revision="c4944ad6ba34dba200a4f127b43e2c94e109fb99" upstream="refs/heads/memory-le-apps.lnx.1.0.r110-rel"/>
+  <project remote="clo-le" name="platform/system/memory/libmeminfo" path="owrt/src/system/memory/libmeminfo" revision="e5690f41db4637600d40b74d7eb8207837edfb85" upstream="refs/heads/memory-le-apps.lnx.1.0.r110-rel"/>
+  <project remote="clo-le" name="platform/system/QPlatformUtils" path="owrt/src/QPlatformUtils" revision="ed908eae717f71072af3d810f7da69823887f7f3" upstream="refs/heads/le-blast.lnx.1.4.r59-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/data-eth" path="owrt/src/data-eth" revision="c44f16f3a62ca161e7dc9a441a9dac75392db898" upstream="refs/heads/datasdx-kernel.lnx.1.1.r16-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/dataipa" path="owrt/src/dataipa" revision="01c2d3f04efc6e0db06b6e2a8883971c4fdaee46" upstream="refs/heads/datasdx-kernel.lnx.1.1.r16-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth" path="owrt/src/vendor/qcom/opensource/bluetooth" revision="ac5cef8f241925ef39c87afee2f0aa53560c7fca" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bluetooth_ext" path="owrt/src/vendor/qcom/opensource/bluetooth_ext" revision="73aa07fffd72ad8bc308f94e04f765c749ab7880" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/bt-kernel" path="owrt/src/vendor/qcom/opensource/bt-kernel" revision="d98eaea4aa580bc0a1396712e1de6166ce2b416c" upstream="refs/heads/bt-kernel.lnx.1.0.4.r16-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="owrt/src/data-ipa-cfg-mgr" revision="c476cd0a889b2817ed5a0fd25c6bc8a93ffa46c9" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/data-kernel" path="owrt/src/data-kernel" revision="4ba5c8da4989e22e0c40fbfb198b4096ce08714a" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/dataservices" path="owrt/src/data-oss" revision="48313055642a6c27257d95cbf8c688cd8af0cb39" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/le-framework" path="owrt/src/frameworks" revision="3d7577f9d034360b0d9f1afe2c9e566629a656e8" upstream="refs/heads/le-frameworks.lnx.2.1.r56-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/location" path="owrt/src/qcom-opensource/location" revision="598752c3767b90460d08d499364de6ff6b15bd6f" upstream="refs/heads/location.lnx.8.0.r69-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/shortcut-fe" path="owrt/src/shortcut-fe" revision="b082a31aa90a6c6d8fa60c158341b6c1713e5d62" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/system/bt" path="owrt/src/vendor/qcom/opensource/system/bt" revision="1564a3f6bde3e7631d7fc382a8d8a591d20c7dc9" upstream="refs/heads/bt.lnx.le.3.1.r9-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/tcp-splice" path="owrt/src/tcp-splice" revision="a7bcad280a4ab691abfb35b279a179b69680088e" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/tools" path="owrt/src/vendor/qcom/opensource/tools" revision="177049360f00b5fb0a038a23768616f7d28d95b1" upstream="refs/heads/opensource-tools.lnx.1.0.r397-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/emesh-sp" path="owrt/src/wlan/qca-ezmesh/emesh-sp" revision="3178b6fabf482208f6ac014032a8f59aeffc2998" upstream="refs/heads/mcc.ezmesh_pinnacles.1.2.r9-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/fw-api" path="owrt/src/wlan/fw-api" revision="d623a1713639c16e18f4228d83eb02040695aa2a" upstream="refs/heads/wlan-api.lnx.1.0.r327-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/fw-api-win" path="owrt/src/wlan/fw-api-win" revision="8407a99f5e5ae9425fff938f41c1c7a01856f618" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/platform" path="owrt/src/wlan/platform" revision="41d1c25f3b2278573b551842e95df7ef1a38be81" upstream="refs/heads/wlan-platform.lnx.1.0.r102-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom-opensource/wlan/qca-hyfi-bridge" path="owrt/src/wlan/qca-ezmesh/qca-hyfi-bridge" revision="67810e44001e172ca6210047c5cc20abeb43c5a7" upstream="refs/heads/mcc.ezmesh_pinnacles.1.2.r9-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="owrt/src/wlan/qca-wifi-host-cmn" revision="8adfd47a400e87d595b47c3a6384a60f6b46fb48" upstream="refs/heads/wlan-cmn.driver.lnx.2.9.r6-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn-win" path="owrt/src/wlan/qca-wifi-host-cmn-win" revision="76d3f536b65522e5c923d43406d9849ce939fe47" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="owrt/src/wlan/qcacld-3.0" revision="42b51dd11593416de7d41ccd31fee2572262e012" upstream="refs/heads/wlan-cld3.driver.lnx.2.9.r6-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="owrt/src/wlan/utils/sigma-dut" revision="035c891c506f612543c9dcb44e4ec3aab87de499" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r121-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/agm" path="owrt/src/vendor/qcom/opensource/agm" revision="0ca25776f1fe9cc395d80f13aaf69b8f1126d5e5" upstream="refs/heads/audio-platform-intf.lnx.1.0.r28-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audio-kernel-ar" path="owrt/src/vendor/qcom/opensource/audio-kernel" revision="1f63f98407cad89bbfa57cfd4ed603abffd77035" upstream="refs/heads/audio-kernel.lnx.5.15.r74-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/datarmnet" path="owrt/src/datarmnet" revision="af82c3bce1e0a89915a32aaeaa440be786cd465a" upstream="refs/heads/datasdx-kernel.lnx.1.1.r16-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/datarmnet-ext" path="owrt/src/datarmnet-ext" revision="c3208672a60739726defe42c7d7bbf656ff20509" upstream="refs/heads/datasdx-kernel.lnx.1.1.r16-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/qal" path="owrt/src/vendor/qcom/opensource/arpal-lx" revision="79ebcd3127671135dd08489224aa8b2a1a91099c" upstream="refs/heads/audio-platform-intf.lnx.1.0.r28-rel"/>
+  <project remote="clo-le" name="platform/vendor/qcom/opensource/securemsm-kernel" path="owrt/src/vendor/qcom/opensource/securemsm-kernel" revision="d6603a42adf3b171d8fd43d0970545bbb3a1dfa4" upstream="refs/heads/sec-kernel.lnx.13.1.r87-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/tinyalsa" path="owrt/src/vendor/qcom/opensource/tinyalsa" revision="7b1085ee85a162d7d8d73650099d8b5b55d42a9c" upstream="refs/heads/audio-tinylibs.lnx.1.0.r133-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/tinycompress" path="owrt/src/vendor/qcom/opensource/tinycompress" revision="e9e4b3f7a7a8a38235ddb4e69dc5528201f01331" upstream="refs/heads/audio-tinylibs.lnx.1.0.r133-rel"/>
+  <project remote="clo-le" name="pmipv6" path="owrt/src/pmipv6" revision="e1767066b85009c636668f768bf8a2e1a1695ba6" upstream="refs/heads/data-mbb.lnx.1.1.r11-rel"/>
+  <project remote="clo-le" name="qcom-opensource/mdm-init" path="owrt/src/mdm-init" revision="35aea805339cc9b0b671b9f57d2e094d7bc998b0" upstream="refs/heads/wlan-service-mdm.lnx.1.0.r21-rel"/>
+  <project remote="clo-qsdk" name="wifi/iw-patches-oss-5.4" path="owrt/src/ipq/wlan-iw/package/network/utils/iw" revision="18f1b286e9b7d34f3ad4cb9aba1df06982c59961" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-qsdk" name="wifi/qca-telemetry-agent-oss" path="owrt/src/ipq/qca-wifi/telemetry_agent" revision="6ede1ecd5fb19e3c1964911cdf5a766bde9cb3c8" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+  <project remote="clo-qsdk" name="wifi/qca-wifi-oss" path="owrt/src/ipq/qca-wifi/component_dev" revision="da5570810ccafe2fb51ea51f42d32c32c5102f46" upstream="refs/heads/win_wlan_host.pinnacles.1.2.r12-rel"/>
+</manifest>
