@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo-imm" fetch="https://git.codelinaro.org/clo/imm" review="null"/>
+  <remote name="clo-ype" fetch="https://git.codelinaro.org/clo/ype" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/master"/>
+  <project name="external/github.com/meta-clang" path="sources/meta-clang" remote="clo-ype" revision="cf20f8bd1366d41094c945597b95dd746e87b871"/>
+  <project name="external/github.com/meta-qt6/meta-qt6" path="sources/meta-qt6" remote="clo-ype" revision="be7fddeb123706f9ef428e1248e9bfa3c0ba3953"/>
+  <project name="external/openembedded.org/meta-openembedded" path="sources/meta-openembedded" remote="clo-ype" revision="a4e768dcfae181dd99e39c4286fa0729ca7f4e47"/>
+  <project name="external/yoctoproject.org/meta-arm" path="sources/meta-arm" remote="clo-ype" revision="3752c4e4478a6dbdf7a722a261d16ebc7a4a99e5"/>
+  <project name="external/yoctoproject.org/meta-security" path="sources/meta-security" remote="clo-ype" revision="3b93a09d528fd93995a15c4994de92759b057b15"/>
+  <project name="external/yoctoproject.org/meta-virtualization" path="sources/meta-virtualization" remote="clo-ype" revision="b9a29d2423407c1e50f19dc3f3e154d164c5f0ec"/>
+  <project name="imm/meta-browser" path="sources/meta-browser" remote="clo-imm" revision="26ce9f7e67880ffb819c4012e89a8863c5f853ba"/>
+  <project name="clo/le/meta-qti-connectivity" path="sources/meta-qti-connectivity" revision="refs/heads/connectivity-service.lnx.2.4.r1-rel"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="sources/wlan-opensource/wpa_supplicant_8" revision="refs/heads/wlan-service.lnx.1.3.r60-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan-cnss-core" path="sources/wlan-opensource/wlan-cnss-core" revision="refs/heads/connectivity-service.lnx.2.4.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="sources/wlan-opensource/fw-api" revision="refs/heads/wlan-api.lnx.1.0.r356-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="sources/wlan-opensource/qca-wifi-host-cmn" revision="refs/heads/wlan-cmn.driver.lnx.2.0.r196-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="sources/wlan-opensource/qcacld-3.0" revision="refs/heads/wlan-cld3.driver.lnx.2.0.r198-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/tools" path="sources/wlan-opensource/dsrc-tool" revision="refs/heads/wlan-tools.lnx.1.0.r104-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="sources/wlan-opensource/sigma-dut" revision="refs/heads/wlan-service.lnx.1.3.r60-rel"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="sources/wlan-opensource/mdm-init" revision="refs/heads/wlan-tools.lnx.1.0.r104-rel"/>
+</manifest>
