@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo-le" fetch="https://git.codelinaro.org/clo/le" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.TELAF_SIMU.1.0"/>
+  <project name="clo/le/Platform/TelAF" path="src/telaf" revision="9c4df1e0c2662f3bfafd79e6a90fb06c064866f4" upstream="refs/heads/telaf.lnx.1.1" dest-branch="refs/heads/telaf.lnx.1.1"/>
+  <project name="clo/le/legato-af" path="src/legato/legato-af" revision="2669efe1dfaf55e3fc71c865cdedc21908afb514" upstream="refs/heads/telaf.lnx.1.1" dest-branch="refs/heads/telaf.lnx.1.1"/>
+  <project name="legatoproject/Kconfiglib" path="src/legato/3rdParty/Kconfiglib" remote="clo-le" revision="ae147b3d2727b222653183b5abf77e38c052b595" upstream="refs/tags/20.04.0" dest-branch="master"/>
+  <project name="legatoproject/legato-3rdParty-jansson" path="src/legato/3rdParty/jansson" remote="clo-le" revision="cfed4c57d3deffab23e2e368d264a4087afc46ab" upstream="refs/tags/20.04.0" dest-branch="master-swi"/>
+  <project name="clo/le/platform/telaf-api" path="src/telaf/interfaces" revision="68321d8126dd230e26e2491d349ba2107aeec514" upstream="refs/heads/telaf.lnx.1.1" dest-branch="refs/heads/telaf.lnx.1.1"/>
+  <project name="clo/le/platform/telaf-pa" path="src/telaf-pa" revision="dfeb6e16ac3e21014b90ce0a2560cfffd2b82e32" upstream="refs/heads/telaf-pa-simulation.lnx.1.0" dest-branch="refs/heads/telaf-pa-simulation.lnx.1.0"/>
+  <project name="clo/le/platform/telaf-pa-default" path="src/telaf-pa-default" revision="61277e117d14a2c9d7e4b9e564e79626712d9c97" upstream="refs/heads/telaf.lnx.1.1" dest-branch="refs/heads/telaf.lnx.1.1"/>
+  <project name="clo/le/platform/telaf-simulation" path="src/telaf-simulation" revision="4d09f01323b3636c407754644585da132db99084" upstream="refs/heads/telaf-pa-simulation.lnx.1.0" dest-branch="refs/heads/telaf-pa-simulation.lnx.1.0"/>
+</manifest>
