@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <refs>
+    <image bins_path="src/kernel-5.15" name="KERNEL.PLATFORM.2.5.r1" project="kernelplatform/manifest" server="git://git-android.quicinc.com" src_path="src/kernel-5.15" tag="AU_LINUX_KERNEL.PLATFORM.2.5.R1.00.00.00.177.016" targets="sa525,sa525m_televm,sa525m_fotavm"/>
+  </refs>
+  <remote name="clo-le" fetch="https://git.codelinaro.org/clo/le" review="null"/>
+  <remote name="clo-ype" fetch="https://git.codelinaro.org/clo/ype" review="null"/>
+  <remote name="clo" fetch="https://git.codelinaro.org" review="codelinaro.org"/>
+  <default remote="clo" revision="refs/heads/LE.UM.7.4.1.1"/>
+  <project name="clo/le/OTA/build" path="src/OTA/build" revision="8ade2ddfe1d6c20ebcb1fdd9e25f9d50c0790019" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/device/qcom/common" path="src/OTA/device/qcom/common" revision="b4f12c5ed0ca432ba8a406f773de1082af21d312" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/external/bsdiff" path="src/OTA/external/bsdiff" revision="0db1c9b59c1c0479e2753cb8cf98a09d62bc4ff0" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/platform/external/libdivsufsort" path="src/OTA/external/libdivsufsort" revision="70a94c7454df52eefe5da0a3cd1c10952742d3e6" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/recovery" path="src/OTA/recovery" revision="70445d012ea234907b3a1bc82fe85eaa3cd28892" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/system/core" path="src/OTA/system/core" revision="af2f7d7bd17c26a3306ccf8f707d8a772841e563" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/OTA/system/extras" path="src/OTA/system/extras" revision="4814452eebac0b1991fb80f634536d7a6130ef5f" upstream="refs/heads/le-ota.lnx.2.0.r40-rel"/>
+  <project name="clo/le/Platform/TelAF" path="src/telaf" revision="9d02808ec4c6538b5efd8c27d30ef8147f0308f1" upstream="refs/heads/telaf.lnx.1.1.r13-rel"/>
+  <project name="external/github.com/meta-clang" path="poky/meta-clang" remote="clo-ype" revision="2942aec8f2c08d491d5703f0adae4c330b80bb55" upstream="refs/heads/movingly/kirkstone"/>
+  <project name="external/openembedded.org/meta-openembedded" path="poky/meta-openembedded" remote="clo-ype" revision="4ad41baed6236d499804cbfc4f174042d84fce97" upstream="refs/heads/openembeded.org/kirkstone"/>
+  <project name="clo/le/external/rigtorp/udpreplay" path="src/udpreplay" revision="4706b5decbf39cabcbeccd5763d77167ac0502e5" upstream="refs/heads/external-tools.lnx.1.0.r12-rel"/>
+  <project name="external/yoctoproject.org/meta-gplv2" path="poky/meta-gplv2" remote="clo-ype" revision="d2f8b5cdb285b72a4ed93450f6703ca27aa42e8a" upstream="refs/heads/yoctoproject.org/kirkstone"/>
+  <project name="external/yoctoproject.org/meta-virtualization" path="poky/meta-openembedded/meta-virtualization" remote="clo-ype" revision="cb2bc17e96552cdfc141d27bd9f4dbd95a872846" upstream="refs/heads/yocto/kirkstone"/>
+  <project name="external/yoctoproject.org/poky" path="poky" remote="clo-ype" revision="6bd3969d32730538608e680653e032e66958fe84" upstream="refs/heads/yocto/kirkstone"/>
+  <project name="clo/filesystems/fs/external/mtd-utils" path="src/filesystems/mtd-utils" revision="9ea2017571c5688bb605123191601b724fb4b07e" upstream="refs/heads/core-technologies.lnx.14.0.r71-rel"/>
+  <project name="clo/le/legato-af" path="src/legato/legato-af" revision="ac0ac0aa74843765ecf04839f35b2a17066886bf" upstream="refs/heads/telaf.lnx.1.1.r13-rel"/>
+  <project name="legatoproject/Kconfiglib" path="src/legato/3rdParty/Kconfiglib" remote="clo-le" revision="ae147b3d2727b222653183b5abf77e38c052b595" upstream="refs/tags/20.04.0" dest-branch="master"/>
+  <project name="legatoproject/legato-3rdParty-jansson" path="src/legato/3rdParty/jansson" remote="clo-le" revision="cfed4c57d3deffab23e2e368d264a4087afc46ab" upstream="refs/tags/20.04.0" dest-branch="master-swi"/>
+  <project name="clo/le/mdm/reboot-daemon" path="src/mdm-ss-mgr/reboot-daemon" revision="4895d8d8ff53cd7eff4a3025461a5c6fe3162752" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r31-rel"/>
+  <project name="clo/le/meta-qti-agm" path="poky/meta-qti-agm" revision="70d7ab7a26ffe661134f4047e1b87e7381327bdf" upstream="refs/heads/audio-platform-intf.lnx.1.0.r25-rel"/>
+  <project name="clo/le/meta-qti-audio" path="poky/meta-qti-audio" revision="0e97543dc0b1b1e06b980b1f058bfc701c34d410" upstream="refs/heads/audio-qahw.lnx.1.0.r23-rel"/>
+  <project name="clo/le/meta-qti-auto" path="poky/meta-qti-auto" revision="d1bee108e971ecdc63774d67d51c600aab3d7947" upstream="refs/heads/automotive.lnx.6.1.r8-rel"/>
+  <project name="clo/le/meta-qti-auto-sepolicy" path="poky/meta-qti-auto-sepolicy" revision="11edf9c6cf637cf66dd783ce0d5d7be87a032399" upstream="refs/heads/le-auto-sepolicy.lnx.2.1.r7-rel"/>
+  <project name="clo/le/meta-qti-bsp" path="poky/meta-qti-bsp" revision="ab2d681a86c13835a8ede38cbcc128c89ede070d" upstream="refs/heads/yocto.lnx.5.0.r28-rel"/>
+  <project name="clo/le/meta-qti-bt" path="poky/meta-qti-bt" revision="36c2ab6edcbc1bf50f96e41916dc7a48560ad1f1" upstream="refs/heads/bt-synergy.lnx.3.1.r38-rel"/>
+  <project name="clo/le/meta-qti-core" path="poky/meta-qti-core" revision="3000e1c4913b478e1bd57bca221676b6f002fc2c" upstream="refs/heads/core-technologies.lnx.14.0.r71-rel"/>
+  <project name="clo/le/meta-qti-data" path="poky/meta-qti-data" revision="6ff07c7626535976eb952858b680dde948eebdf3" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/le/meta-qti-distro" path="poky/meta-qti-distro" revision="cd6bc88430a5489e26bc885ad9494f6f3c79a3e8" upstream="refs/heads/yocto.lnx.5.0.r28-rel"/>
+  <project name="clo/le/meta-qti-location" path="poky/meta-qti-location" revision="796fb377eaaea0831b7e4c6c13b81c80f2ead6b5" upstream="refs/heads/location.lnx.8.0.r63-rel"/>
+  <project name="clo/le/meta-qti-qal" path="poky/meta-qti-pal" revision="707a218e353c9aa042e713f3e4bdcab80e5b6ba7" upstream="refs/heads/audio-platform-intf.lnx.1.0.r25-rel"/>
+  <project name="clo/le/meta-qti-security" path="poky/meta-qti-security" revision="3e3264241384236fc14ebe3338ef706ca80dac51" upstream="refs/heads/sec-userspace.lnx.13.0.r98-rel"/>
+  <project name="clo/le/meta-qti-sepolicy" path="poky/meta-qti-sepolicy" revision="f422f1bd0f727db58a0b4efecaa520576a2949db" upstream="refs/heads/le-sepolicy.lnx.5.0.r27-rel"/>
+  <project name="clo/le/meta-qti-ss-mgr" path="poky/meta-qti-ss-mgr" revision="ad3d0db22bbb3d6aea0f8d70bde50160cab5793b" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r31-rel"/>
+  <project name="clo/le/meta-qti-telaf-pa" path="poky/meta-qti-telaf-pa" revision="e265605e821700df3da7764633cf46c9f73f294a" upstream="refs/heads/meta-telaf-pa.lnx.1.1.r1-rel"/>
+  <project name="clo/le/meta-qti-telsdk" path="poky/meta-qti-telsdk" revision="7a09cf958786f46dbeab1fb7e628c61960c461e1" upstream="refs/heads/telsdk.lnx.2.0.r20-rel"/>
+  <project name="clo/le/meta-qti-wlan" path="poky/meta-qti-wlan" revision="fb5a633d28d8dc488af455c6d93694790dd00ceb" upstream="refs/heads/auto-wlan-service.lnx.1.4.r3-rel"/>
+  <project name="clo/le/meta-rust" path="disregard/poky/meta-rust" revision="625c3874f4e0e813e824a4304144e6d1740ba3f4" upstream="refs/heads/clo/corrugation/fix-kirkstone"/>
+  <project name="clo/le/meta-selinux" path="poky/meta-selinux" revision="0c351be8372d9981bfe1b05511d46b468515fc5f" upstream="refs/heads/le-sepolicy.lnx.5.0.r27-rel"/>
+  <project name="clo/la/platform/external/Open-AVB" path="src/external/open-avb" revision="0a3e0e0313349d0c0260d62ec89851edfbf6cc7b" upstream="refs/heads/vnw-gptp.lnx.2.0.r52-rel"/>
+  <project name="clo/la/platform/external/avb" path="src/external/avb" revision="95133c411b40aa76032ae84e075aaf163bda072f" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/boringssl" path="src/OTA/streaming/external/boringssl" revision="471da9f8766c5b2a172c5450a2331f1491b5edda" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/bsdiff" path="src/OTA/streaming/external/bsdiff" revision="c5f919f43106f7e715182fca059e002323796ffe" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/compat-wireless" path="src/external/compat-wireless" revision="0143c07f3b1594a9259b7a0fe041deb5f4db8099" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/external/crosvm" path="src/external/crosvm" revision="b370802d27de704827e0fa7b491e904e94e3c44f" upstream="refs/heads/auto-vmm.lnx.1.0.r20-rel" groups="aosp"/>
+  <project name="clo/la/platform/external/libbrillo" path="src/OTA/streaming/external/libbrillo" revision="81068c8a531cfaacb8101a504e220a96d4e73ef3" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/libchrome" path="src/OTA/streaming/external/libchrome" revision="e423511080849a0fd96cd59f34766448a29d78df" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/libevent" path="src/OTA/streaming/external/libevent" revision="840a2807a3c8f167953212335135dd86fde5e37b" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/lzma" path="src/OTA/streaming/external/lzma" revision="04d32060f5da6d14bf5f61e672ed93ac409b7feb" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/minijail" path="src/external/minijail" revision="8cb44f9fc32f538a90b6a3f09d3941e26fe6d6f9" upstream="refs/heads/auto-vmm.lnx.1.0.r20-rel" groups="aosp"/>
+  <project name="clo/la/platform/external/modp_b64" path="src/OTA/streaming/external/modp_b64" revision="2b86897a21342bc69ed8ff01690cd82bd2aa6d5c" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/rust/crates/android_logger" path="src/external/rust/crates/android_logger" revision="7f4eca1ac49d9c7fc88cfa5f547ca09c7b5eace3" upstream="refs/heads/auto-vmm.lnx.1.0.r20-rel" groups="aosp"/>
+  <project name="clo/la/platform/external/rust/crates/simplelog" path="src/external/rust/crates/simplelog" revision="b2d25e663deaa1e8294c6bf94942eca8d86ae4c2" upstream="refs/heads/auto-android-core-sys.lnx.13.0.r21-rel"/>
+  <project name="clo/la/platform/external/rust/crates/vmm_vhost" path="src/external/rust/crates/vmm_vhost" revision="e20be590881517ac8a47008986221be81eca505c" upstream="refs/heads/auto-vmm.lnx.1.0.r20-rel" groups="aosp"/>
+  <project name="clo/la/platform/external/safe-iop" path="src/external/safe-iop" revision="aa0725fb1da35e47676b6da30009322eb5ed59be" upstream="refs/heads/le-blast.lnx.2.0.r36-rel"/>
+  <project name="clo/la/platform/external/shflags" path="src/OTA/streaming/external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/external/wpa_supplicant_8" path="src/external/wpa_supplicant_8" revision="e368dce623f5d5d9c272e71d56ae3d86c5a7be22" upstream="refs/heads/auto-wlan-service.lnx.1.4.r3-rel"/>
+  <project name="clo/la/platform/external/xz-embedded" path="src/OTA/streaming/external/xz-embedded" revision="c80a5589e0e2667480875d41ae837dec1d523cb9" upstream="refs/heads/android-external.lnx.3.1.r30-rel"/>
+  <project name="clo/la/platform/frameworks/native" path="src/OTA/streaming/frameworks/native" revision="9e9b8607bb915b9849386c5b870ce01bd8ef33cf" upstream="refs/heads/android-framework.lnx.8.0.r10-rel"/>
+  <project name="clo/la/platform/hardware/qcom/audio" path="src/vendor/qcom/opensource/audio-hal/primary-hal" revision="8033440baba946f40edb80d8b4057d7e8b008fb4" upstream="refs/heads/audio-qahw.lnx.1.0.r23-rel"/>
+  <project name="clo/la/platform/hardware/qcom/gps" path="src/hardware/qcom/gps" revision="b962064c4cdf2a725a193cad58d5dd39c89d9311" upstream="refs/heads/location.lnx.8.0.r63-rel"/>
+  <project name="clo/la/platform/hardware/qcom/sensors" path="src/hardware/qcom/sensors/" revision="01d6dc1029dac1198a2f93fac4d1bd4f6bea7c33" upstream="refs/heads/sensors-bmi.lnx.2.0.r8-rel"/>
+  <project name="clo/la/platform/hardware/ril" path="src/telux/services/ril" revision="5ee53716a611e7d63509db504cc6dd303350cc3a" upstream="refs/heads/telsdk.lnx.2.0.r20-rel"/>
+  <project name="clo/le/platform/init_mss" path="src/mdm-ss-mgr/init_mss" revision="f05c31184411bcca8f16702b1292ecba35aaa8f4" upstream="refs/heads/mdm-ss-mgr.lnx.2.0.r31-rel"/>
+  <project name="clo/le/platform/open-source/telematics-apps" path="src/telematics/apps/open-source" revision="ba9900b67f09904d9d74527c71dfb435a3fde861" upstream="refs/heads/telsdk.lnx.2.0.r20-rel"/>
+  <project name="clo/la/platform/system/core" path="src/system/core" revision="b798f8b6ee8bfe92c39e0147575137c51a7ecdbf" upstream="refs/heads/le-blast.lnx.2.0.r36-rel"/>
+  <project name="clo/la/platform/system/extras" path="src/system/extras" revision="1d0ab993cebcd07d20e5177ebe793f035292b5c5" upstream="refs/heads/le-blast.lnx.2.0.r36-rel"/>
+  <project name="clo/le/platform/system/memory_repo" path="src/system/memory" revision="ee1163c598ba2a1a0c0f53b97b3e063665695817" upstream="refs/heads/memory-le-apps.lnx.1.0.r102-rel"/>
+  <project name="clo/le/platform/system/memory/libdmabufheap" path="src/system/memory/libdmabufheap" revision="c4944ad6ba34dba200a4f127b43e2c94e109fb99" upstream="refs/heads/memory-le-apps.lnx.1.0.r102-rel"/>
+  <project name="clo/la/platform/system/memory/libmeminfo" path="src/system/memory/libmeminfo" revision="e5690f41db4637600d40b74d7eb8207837edfb85" upstream="refs/heads/memory-le-apps.lnx.1.0.r102-rel"/>
+  <project name="clo/la/platform/system/tools/aidl" path="src/system/tools/aidl" revision="4a73ee70a5fd2729fbdfb6612be72dab27c3c8e0" upstream="refs/heads/android-framework.lnx.8.0.r10-rel"/>
+  <project name="clo/la/platform/system/update_engine" path="src/OTA/streaming/system/update_engine" revision="dc13ec55214b21b23d2c98380467cc5eef805a7b" upstream="refs/heads/android-framework.lnx.8.0.r10-rel"/>
+  <project name="clo/le/platform/telaf-api" path="src/telaf/interfaces" revision="450d844bc6657cbaa7d27c8eb618021a7b910130" upstream="refs/heads/telaf.lnx.1.1.r13-rel"/>
+  <project name="clo/le/platform/telaf-pa" path="src/telaf-pa" revision="19c14f9dcd53a250dfe53c04203504196e20b0c2" upstream="refs/heads/telaf-pa.lnx.1.1.r2-rel"/>
+  <project name="clo/le/platform/telaf-pa-default" path="src/telaf-pa-default" revision="c6f92d45078c96465998a62e6981f2562411087d" upstream="refs/heads/telaf.lnx.1.1.r13-rel"/>
+  <project name="clo/la/platform/vendor/opensource/data-eth" path="src/data-eth" revision="cbc44bccb5d02d66b2f1b15803d26d856acb25bf" upstream="refs/heads/datasdx-kernel.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/opensource/dataipa" path="src/dataipa" revision="3038382e1c3a25649b1b45f138263f49b5e8b9e4" upstream="refs/heads/datasdx-kernel.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/bt-kernel" path="src/vendor/qcom/opensource/bt-kernel" revision="3c5bec4b955c0c2bb4b8bbd5709e32945bf8b13b" upstream="refs/heads/bt-kernel.lnx.1.1.r30-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/crosvm-gunyah" path="src/vendor/qcom/opensource/crosvm-gunyah" revision="189b39ab2cdfa8192ee5f32522f8247dff0f32b8" upstream="refs/heads/auto-android-core-sys.lnx.13.0.r21-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="src/data-ipa-cfg-mgr" revision="e094480895e548b234de78aaa02d3886ae5ef941" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/data-kernel" path="src/data-kernel" revision="318c0f59e0346378bb39c3ed916fa4b00ff17b49" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/dataservices" path="src/data-oss" revision="0b3fc6a015a47cdd6d38aef982a0784a0c9e19ae" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/le-framework" path="src/frameworks" revision="3c30a630bca1bd7b23da93df355863532b6379f7" upstream="refs/heads/le-frameworks.lnx.3.0.r36-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/location" path="src/qcom-opensource/location" revision="f9ab7d51b90627c02c57995367e4e5dc0e128068" upstream="refs/heads/location.lnx.8.0.r63-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/mvm-kernel" path="src/vendor/qcom/opensource/mvm-kernel" revision="be6c1d8e457c76ed928b2784f27b4ca5a5a64ded" upstream="refs/heads/mvm.lnx.1.0.r9-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/qdloader" path="src/vendor/qcom/opensource/qdloader" revision="985a04a97fc7403735a6a7f6a5e8a5489213984d" upstream="refs/heads/qsahara.lnx.1.0.r12-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/shortcut-fe" path="src/shortcut-fe" revision="9e2b8d89e90d498bc498fd52afb15b69b7f44005" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/snaptel-sdk" path="src/telux/public" revision="9fd30151e3318a2eb34b7049c1f5d3e693a21cd6" upstream="refs/heads/telsdk.lnx.2.0.r20-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/synergy" path="src/synergy/synergy-opensource" revision="d004feb8f4167ae58420fc33fd3d0590a5222815" upstream="refs/heads/bt-synergy.lnx.3.1.r38-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/tcp-splice" path="src/tcp-splice" revision="c656c2845978b401892e0983e63c1f1263d0e405" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/tools" path="src/vendor/qcom/opensource/tools" revision="0bbd7218e914b5132257e1c163b64f0c2c64b622" upstream="refs/heads/opensource-tools.lnx.1.0.r381-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/fw-api" path="src/wlan/fw-api" revision="026df39078f55fc6f48f8aaa92690745f6c5e06d" upstream="refs/heads/auto-wlan-api.lnx.1.4.r10-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/platform" path="src/wlan/platform" revision="e49eee0a509a688066ad10f0be9f7d0d49fd1fb9" upstream="refs/heads/auto-wlan-platform.lnx.2.4.r12-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="src/wlan/qca-wifi-host-cmn" revision="f49a5ff4b73b314d2ba1602bf876e525043c3701" upstream="refs/heads/auto-wlan-cmn-driver.lnx.2.4.r10-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="src/wlan/qcacld-3.0" revision="ec6172a76225f62219915ef8c9afcfdbc54b5206" upstream="refs/heads/auto-wlan-cld3-driver.lnx.2.4.r10-rel"/>
+  <project name="clo/la/platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="src/wlan/utils/sigma-dut" revision="f9a6cfd505a43fd4e27a5b531573b4218955e7d5" upstream="refs/heads/auto-wlan-service.lnx.1.4.r3-rel"/>
+  <project name="clo/le/platform/vendor/qcom-opensource/wlan/wlan-devicetree" path="src/wlan/wlan-devicetree" revision="8497da78a9e4609c395e23b74c04f6e441eeb00c" upstream="refs/heads/auto-wlan-platform.lnx.2.4.r12-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/agm" path="src/vendor/qcom/opensource/agm" revision="8768d0cd5014fb0cfb4cd49161982fa2a233ddde" upstream="refs/heads/audio-platform-intf.lnx.1.0.r25-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/audio-kernel-ar" path="src/vendor/qcom/opensource/audio-kernel" revision="1996a578be663ce14efbbfc7f49cbbb8babff257" upstream="refs/heads/audio-kernel.lnx.5.15.r71-rel">
+    <linkfile src="audio_kernel_vendor_board.mk" dest="src/vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk"/>
+    <linkfile src="audio_kernel_product_board.mk" dest="src/vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk"/>
+  </project>
+  <project name="clo/la/platform/vendor/qcom/opensource/datarmnet" path="src/datarmnet" revision="492d8e93da92ff8ddf6a5a1c8a58baacce428419" upstream="refs/heads/datasdx-kernel.lnx.3.1.r1-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/datarmnet-ext" path="src/datarmnet-ext" revision="c3208672a60739726defe42c7d7bbf656ff20509" upstream="refs/heads/datasdx-kernel.lnx.3.1.r1-rel"/>
+  <project name="clo/le/platform/vendor/qcom/opensource/nad-core-kernel" path="src/vendor/qcom/opensource/nad-core-kernel" revision="035916e24f120d79c5765409aba279520c36288b" upstream="refs/heads/nad-core.lnx.3.0.r2-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/qal" path="src/vendor/qcom/opensource/arpal-lx" revision="a459253b2b9da203f9b3df6077ebdd81a6ae0a11" upstream="refs/heads/audio-platform-intf.lnx.1.0.r25-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/securemsm-kernel" path="src/vendor/qcom/opensource/securemsm-kernel" revision="2deb1fe40157aed2f69b6abfb72172ccaa0d61ad" upstream="refs/heads/sec-kernel.lnx.13.1.r83-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/tinyalsa" path="src/vendor/qcom/opensource/tinyalsa" revision="2ce2d8ff22e94ee0eb989ed43e44279909d73c7c" upstream="refs/heads/audio-tinylibs.lnx.1.0.r128-rel"/>
+  <project name="clo/la/platform/vendor/qcom/opensource/tinycompress" path="src/vendor/qcom/opensource/tinycompress" revision="e9e4b3f7a7a8a38235ddb4e69dc5528201f01331" upstream="refs/heads/audio-tinylibs.lnx.1.0.r128-rel"/>
+  <project name="clo/la/platform/vendor/qcom/wlan" path="src/device/qcom/wlan" revision="cf9cb09ab50f289b1efc8b7e1aef90fc3dfd15ac" upstream="refs/heads/auto-wlan-service.lnx.1.4.r3-rel"/>
+  <project name="clo/le/pmipv6" path="src/pmipv6" revision="e1767066b85009c636668f768bf8a2e1a1695ba6" upstream="refs/heads/data-auto.lnx.3.1.r1-rel"/>
+  <project name="clo/le/poky/meta-qti-telaf" revision="4aaf9a9bfb3661809d8685b6fb886793e46b723e" upstream="refs/heads/meta-telaf.lnx.2.1.r1-rel" path="poky/meta-qti-telaf"/>
+  <project name="clo/le/qc/components/le-blast.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-blast" revision="c590d2302ae8176ea82d4bad608bf189b7d35707" upstream="refs/heads/le-blast.lnx.2.0.r36-rel"/>
+  <project name="clo/le/qc/components/le-frameworks.lnx/oe-recipes-oss" path="poky/meta-qti-bsp/recipes-frameworks" revision="65f73dae352a5c4086470bbb2c71e4309388ba06" upstream="refs/heads/le-frameworks.lnx.3.0.r36-rel"/>
+  <project name="clo/le/qcom-opensource/mdm-init" path="src/mdm-init" revision="f83c8b6bf09b4e5303fb4b3613dbc40fbae26192" upstream="refs/heads/auto-wlan-tools.lnx.1.4.r3-rel"/>
+  <project name="clo/le/qti-conf" path="poky/qti-conf" revision="99397782d5bd923b93431e80e8b7c0c6382a6e53" upstream="refs/heads/yocto.lnx.5.0.r28-rel">
+    <linkfile src="set_bb_env.sh" dest="setup-environment"/>
+  </project>
+  <project name="clo/le/telematics-platform-oss" path="src/telematics/platform/oss" revision="43247c639c61013d858b5fe74faa68eb390efb8d" upstream="refs/heads/automotive.lnx.6.1.r8-rel"/>
+</manifest>
